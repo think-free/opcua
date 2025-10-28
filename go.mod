@@ -1,4 +1,4 @@
-module github.com/gopcua/opcua
+module github.com/think-free/opcua
 
 go 1.23
 
