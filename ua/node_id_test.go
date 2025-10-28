@@ -10,8 +10,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/gopcua/opcua/errors"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua/errors"
 )
 
 func TestNodeID(t *testing.T) {

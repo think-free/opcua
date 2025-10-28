@@ -6,8 +6,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gopcua/opcua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua"
 )
 
 func TestNamespace(t *testing.T) {

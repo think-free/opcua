@@ -11,8 +11,8 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/gopcua/opcua/ua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua/ua"
 )
 
 func TestSupportedPolicies(t *testing.T) {
