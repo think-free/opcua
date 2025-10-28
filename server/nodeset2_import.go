@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/gopcua/opcua/schema"
-	"github.com/gopcua/opcua/ua"
+	"github.com/think-free/opcua/schema"
+	"github.com/think-free/opcua/ua"
 )
 
 func (srv *Server) ImportNodeSet(nodes *schema.UANodeSet) error {

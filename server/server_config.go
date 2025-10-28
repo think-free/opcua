@@ -12,9 +12,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uapolicy"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uapolicy"
+	"github.com/think-free/opcua/uasc"
 )
 
 // Option is an option function type to modify the configuration.

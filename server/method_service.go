@@ -1,8 +1,8 @@
 package server
 
 import (
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uasc"
 )
 
 // MethodService implements the Method Service Set.

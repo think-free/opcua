@@ -8,9 +8,10 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/debug"
 	"log"
+
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/debug"
 )
 
 func main() {

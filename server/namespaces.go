@@ -5,8 +5,8 @@
 package server
 
 import (
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/ua"
+	"github.com/think-free/opcua/id"
+	"github.com/think-free/opcua/ua"
 )
 
 var (

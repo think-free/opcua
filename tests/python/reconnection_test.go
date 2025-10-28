@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/monitor"
-	"github.com/gopcua/opcua/ua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/monitor"
+	"github.com/think-free/opcua/ua"
 )
 
 const (

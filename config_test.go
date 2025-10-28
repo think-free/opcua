@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uapolicy"
-	"github.com/gopcua/opcua/uasc"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uacp"
+	"github.com/think-free/opcua/uapolicy"
+	"github.com/think-free/opcua/uasc"
 )
 
 // test certificate generated with

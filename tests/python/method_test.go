@@ -6,9 +6,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/ua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/ua"
 )
 
 type Complex struct {

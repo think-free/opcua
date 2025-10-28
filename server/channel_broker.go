@@ -8,9 +8,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uacp"
+	"github.com/think-free/opcua/uasc"
 )
 
 type channelBroker struct {

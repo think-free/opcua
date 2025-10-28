@@ -19,9 +19,9 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/server"
-	"github.com/gopcua/opcua/ua"
+	"github.com/think-free/opcua/id"
+	"github.com/think-free/opcua/server"
+	"github.com/think-free/opcua/ua"
 )
 
 var (

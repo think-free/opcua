@@ -8,8 +8,8 @@ import (
 	"log"
 	"testing"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/ua"
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/ua"
 )
 
 func TestUnsetUserIdentityTokenConnect(t *testing.T) {

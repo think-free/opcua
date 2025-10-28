@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/ua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua/id"
+	"github.com/think-free/opcua/ua"
 )
 
 func TestClient_Send_DoesNotPanicWhenDisconnected(t *testing.T) {

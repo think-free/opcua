@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/ua"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/ua"
 )
 
 func TestNamespace(t *testing.T) {

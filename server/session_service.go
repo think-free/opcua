@@ -5,8 +5,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uasc"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uasc"
 )
 
 const (

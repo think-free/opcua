@@ -9,12 +9,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gopcua/opcua/id"
-	uatest "github.com/gopcua/opcua/tests/python"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uapolicy"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua/id"
+	uatest "github.com/think-free/opcua/tests/python"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uacp"
+	"github.com/think-free/opcua/uapolicy"
 )
 
 func TestNewRequestMessage(t *testing.T) {

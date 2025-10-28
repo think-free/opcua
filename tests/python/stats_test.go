@@ -7,9 +7,9 @@ import (
 	"expvar"
 	"testing"
 
-	"github.com/gopcua/opcua"
-	"github.com/gopcua/opcua/stats"
 	"github.com/stretchr/testify/require"
+	"github.com/think-free/opcua"
+	"github.com/think-free/opcua/stats"
 )
 
 func newExpVarInt(i int64) *expvar.Int {
