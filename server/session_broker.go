@@ -7,7 +7,7 @@ import (
 
 	"github.com/google/uuid"
 
-	"github.com/gopcua/opcua/ua"
+	"github.com/think-free/opcua/ua"
 )
 
 type session struct {
