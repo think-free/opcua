@@ -252,7 +252,17 @@ func (s *Server) Start(ctx context.Context) error {
 	if s.url == "" {
 		s.url = defaultListenAddr
 	}
-	s.l, err = uacp.Listen(ctx, s.url, nil)
+
+	// Advertise larger message/chunk limits to enable chunking of big responses
+	ack := &uacp.Acknowledge{
+		// Use sane, larger limits. 0 for MaxChunkCount means "no limit".
+		ReceiveBufSize: 4 * 1024 * 1024,  // 4 MiB (receive from client)
+		SendBufSize:    4 * 1024 * 1024,  // 4 MiB (send to client - must fit Browse responses)
+		MaxMessageSize: 64 * 1024 * 1024, // 64 MiB (total message limit)
+		MaxChunkCount:  0,                // unlimited chunks
+	}
+
+	s.l, err = uacp.Listen(s.url, ack)
 	if err != nil {
 		return err
 	}
