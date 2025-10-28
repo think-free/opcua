@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gopcua/opcua/id"
-	"github.com/gopcua/opcua/schema"
-	"github.com/gopcua/opcua/ua"
-	"github.com/gopcua/opcua/uacp"
-	"github.com/gopcua/opcua/uapolicy"
+	"github.com/think-free/opcua/id"
+	"github.com/think-free/opcua/schema"
+	"github.com/think-free/opcua/ua"
+	"github.com/think-free/opcua/uacp"
+	"github.com/think-free/opcua/uapolicy"
 )
 
 //go:generate go run ../cmd/predefined-nodes/main.go
@@ -127,7 +127,7 @@ func New(opts ...Option) *Server {
 			CurrentTime: time.Now(),
 			State:       ua.ServerStateSuspended,
 			BuildInfo: &ua.BuildInfo{
-				ProductURI:       "https://github.com/gopcua/opcua",
+				ProductURI:       "https://github.com/think-free/opcua",
 				ManufacturerName: cfg.manufacturerName,
 				ProductName:      cfg.productName,
 				SoftwareVersion:  "0.0.0-dev",
@@ -252,7 +252,15 @@ func (s *Server) Start(ctx context.Context) error {
 	if s.url == "" {
 		s.url = defaultListenAddr
 	}
-	s.l, err = uacp.Listen(s.url, nil)
+
+	ack := &uacp.Acknowledge{
+		ReceiveBufSize: 4 * 1024 * 1024,
+		SendBufSize:    4 * 1024 * 1024,
+		MaxMessageSize: 64 * 1024 * 1024,
+		MaxChunkCount:  0,
+	}
+
+	s.l, err = uacp.Listen(s.url, ack)
 	if err != nil {
 		return err
 	}
