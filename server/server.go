@@ -262,7 +262,7 @@ func (s *Server) Start(ctx context.Context) error {
 		MaxChunkCount:  0,                // unlimited chunks
 	}
 
-	s.l, err = uacp.Listen(s.url, ack)
+	s.l, err = uacp.Listen(ctx, s.url, ack)
 	if err != nil {
 		return err
 	}
