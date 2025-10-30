@@ -254,10 +254,10 @@ func (s *Server) Start(ctx context.Context) error {
 	}
 
 	ack := &uacp.Acknowledge{
-		ReceiveBufSize: 4 * 1024 * 1024,
-		SendBufSize:    4 * 1024 * 1024,
-		MaxMessageSize: 64 * 1024 * 1024,
-		MaxChunkCount:  0,
+  		ReceiveBufSize: 16 * 1024 * 1024,  // 16 MiB
+    	SendBufSize:    16 * 1024 * 1024,  // 16 MiB
+    	MaxMessageSize: 128 * 1024 * 1024, // 128 MiB
+    	MaxChunkCount:  64,                // e.g. allow up to 64 chunks
 	}
 
 	s.l, err = uacp.Listen(s.url, ack)
